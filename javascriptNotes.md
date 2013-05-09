@@ -62,4 +62,30 @@ Can run functions from within array:
 var my_array[, , function(a) {return a * 2;}]
 var doubler = my_array[3];
 
+### Array Methods
+Push and Pop
+toString() - takes representation of array and turns it into string
+push() - adds specified element to end of array
+pop() - no arguments; returns last value of array
+
+unshift(val) - analogous to push, but works on start of array
+shift() - pop, but works on start of array
+
+sort - default sort as strings. Can pass comparator function to sort as though they were numbers:
+    my_array.sort(function (a,b) { return a - b;});
+Can also randomly sort array like so:
+    my_array.sort(function (a,b) { return Math.random() - 0.5;});
+
+.reverse - flips array 
+.concat - appends all values of one array to another. eg. z = x.concat(y);
+.slice(start, end) - creates new array containing values from start index to end index. 
+.join(separator) - 'joins' contents of array with specified separator. Could be used to create URL slug? 
+
+
+## Callbacks
+Helps prevent client being frozen as we wait for sequence of functions to run.
+Better to make asynchronous request and provide callback function which is invoked on return.
+
+
+
 
