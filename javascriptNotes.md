@@ -81,6 +81,11 @@ Can also randomly sort array like so:
 .slice(start, end) - creates new array containing values from start index to end index. 
 .join(separator) - 'joins' contents of array with specified separator. Could be used to create URL slug? 
 
+Array Splicing
+Keyword available: 'delete' - clumsy
+my_array.splice(index, number of elements to remove);
+Can also use splice to insert elements: my_array.splice(2, 0, 'two'). Each extra parameter becomes a new element to be added to the array.
+
 
 ## Callbacks
 Helps prevent client being frozen as we wait for sequence of functions to run.
