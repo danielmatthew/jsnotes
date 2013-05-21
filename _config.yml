@@ -1,4 +1,4 @@
 auto: true
 markdown: rdiscount
-permalink: /til-js/:year/:month/:day/:title
+# permalink: /til-js/:year/:month/:day/:title
 rdiscount extensions: [smart]
