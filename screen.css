@@ -1,6 +1,13 @@
 body {
     font-family: Georgia, serif;
-    font-size: 1.4em;
-    max-width: 60em;
-    margin: 1em auto
+    font-size: 100%;
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+}
+
+.post {
+    margin-bottom: 1em;
 }
