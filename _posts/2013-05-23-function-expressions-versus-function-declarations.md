@@ -13,7 +13,7 @@ Interestingly, a variable is created with the same name as the function.
 ## Function expression
 A function expression looks like this:
     var example = function() {}
-This kind of function is evaluated at run-time. example can't be called until it the JS engine has reached that code. If it's called at some point beforehand, you'll get an error.
+This kind of function is evaluated at run-time and means that example() can't be called until it the JS engine has reached that point in your code. If it's referenced before that, you'll get an error.
 
 In reality, they're incredibly similar functionality wise. Just make sure you're aware of how the Javascript interpreter is going to load them.
 
