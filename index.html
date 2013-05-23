@@ -6,10 +6,10 @@ title: "TIL JavaScript"
 {% for post in site.posts %}
   <div class="post">
     <h3>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="/til-js{{ post.url }}">{{ post.title }}</a>
       <span>{{ post.date | date: "%a, %d %b %Y" }}</span>
     </h3>
     {{ post.content }}
-    <a class="permalink" href="{{ post.url }}">Permalink</a>
+    <a class="permalink" href="/til-js{{ post.url }}">Permalink</a>
   </div>
 {% endfor %}
