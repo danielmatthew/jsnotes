@@ -1,13 +1,23 @@
 body {
-    font-family: Georgia, serif;
+    font-family: "rooney-web", sans-serif;
     font-size: 100%;
 }
 
+a {
+    color: inherit;
+}
+
 .content {
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
 .post {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 40em) {
+    .content {
+        max-width: 50em;
+    }
 }
