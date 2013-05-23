@@ -7,7 +7,7 @@ A function declaration is written like so:
     function example() {}
 
 A declared function is evaluated at parse-time - when the browser's Javascript engine gives it the once-over to see what it contains - and thus are loaded before any code is executed.
-In practical terms, this function can now be called at anytime: perhaps in code that is defined before the function. This is due to the idea of hoisting: a peculiarity which means that allows variables to be 'hoisted' to the top of the current scope.  The same principle occurs with declared functions.
+In practical terms, this function can now be called at anytime: perhaps in code that is defined before the function. This is due to the idea of hoisting: a facet of the language that allows variables to be 'hoisted' to the top of the current scope.  The same principle occurs with declared functions.
 Interestingly, a variable is created with the same name as the function.
 
 ## Function expression
