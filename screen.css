@@ -1,6 +1,6 @@
 body {
-    font-family: "rooney-web", sans-serif;
-    font-size: 100%;
+    font-family: "skolar", serif;
+    font-size: 100%; /* 16px */
 }
 
 a {
@@ -16,8 +16,12 @@ a {
     margin-bottom: 2em;
 }
 
-@media screen and (min-width: 40em) {
+h1 {
+    text-align: center;
+}
+
+@media screen and (min-width: 40em) { /* 640px */
     #articles {
-        max-width: 50em;
+        max-width: 30em;
     }
 }
