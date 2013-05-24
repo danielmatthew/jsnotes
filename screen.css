@@ -1,5 +1,5 @@
 body {
-    font-family: "skolar", serif;
+    font-family: "ff-meta-serif-web-pro", serif;
     font-size: 100%; /* 16px */
 }
 
@@ -8,6 +8,8 @@ a {
 }
 
 #articles {
+    font-size: 1.2em;
+    line-height: 1.6;
     width: 90%;
     margin: auto;
 }
@@ -22,6 +24,6 @@ h1 {
 
 @media screen and (min-width: 40em) { /* 640px */
     #articles {
-        max-width: 30em;
+        max-width: 35em;
     }
 }
