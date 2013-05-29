@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>TIL JavaScript</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="screen.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">TIL JavaScript</a></h1>
+    </header>
+    <section id="articles">
+      
+  <div class="post">
+    <span class="post-date">Thu, 23 May 2013</span>
+    <h2>
+      <a href="/til-js/2013/05/23/function-expressions-versus-function-declarations">Function declarations versus function expressions</a>
+    </h2>
+    <h3>Function declaration</h3>
+
+<p>A function declaration is written like so:</p>
+
+<pre><code>function example() {}
+</code></pre>
+
+<p>A declared function is evaluated at parse-time - when the browser's Javascript engine gives it the once-over to see what it contains - and thus are loaded before any code is executed.
+In practical terms, this function can now be called at anytime: perhaps in code that is defined before the function. This is due to the idea of hoisting: a facet of the language that allows variables to be 'hoisted' to the top of the current scope.  The same principle occurs with declared functions.
+Interestingly, a variable is created with the same name as the function.</p>
+
+<h3>Function expression</h3>
+
+<p>A function expression looks like this:</p>
+
+<pre><code>var example = function() {}
+</code></pre>
+
+<p>This kind of function is evaluated at run-time and means that example() can't be called until it the JS engine has reached that point in your code. If it's referenced before that, you'll get an error.</p>
+
+<p>In reality, they're incredibly similar functionality wise. Just make sure you're aware of how the Javascript interpreter is going to load them.</p>
+
+<h3>Function constructor</h3>
+
+<p>This is a concept that was new to me before writing this - so perhaps the self-documentation idea does have merits!
+It is possible to write:</p>
+
+<pre><code>var example = new Function() {}
+</code></pre>
+
+<p>Mozilla's Developer Network advises against this approach because:</p>
+
+<blockquote><p>it needs the function body as a string, which may prevent optimizations</p></blockquote>
+
+<p>Douglas Crockford recommends that JS authors use function expressions because</p>
+
+<blockquote><p>it makes it clear that the variable contains a function value</p></blockquote>
+
+<p>From writing my own code and working with others', I prefer the aesthetics of the function expression: it's much easier to read at a glance and determine what functionality is available.</p>
+
+<p>However, it appears there are a number of subtle differences which may crop up later in the development cycle:</p>
+
+<ul>
+<li>A function name cannot be changed, but a variable to which a function is assigned <em>can</em> be reassigned.</li>
+<li>The function name can only be used within the function's body.</li>
+</ul>
+
+
+  </div>
+
+    </section>
+    <script type="text/javascript" src="//use.typekit.net/ttu1lxx.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </body>
+</html>
