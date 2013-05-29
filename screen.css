@@ -1,8 +1,10 @@
 body {
     margin: 1em auto;
-    width: 90%;
+    width: 95%;
+    background: #f5f5f5;
+    color: #34495e;
     font-family: "ff-tisa-web-pro", serif;
-    font-size: 100%; /* 16px */
+    font-size: 125%; /* 20px */
 }
 
 p {
@@ -12,13 +14,13 @@ p {
 }
 
 h1 {
-    font-size: 2.25em; /* 36px */
+    font-size: 2.25em;
     line-height: 1.3333;
     margin: 0 0 0.6667;
 }
 
 h2 {
-    font-size: 1.875em; /* 30px */
+    font-size: 1.875em;
     line-height: 1.6;
     margin: 0 0 0.8em;
 }
@@ -29,6 +31,8 @@ a {
 }
 
 blockquote {
+    margin: 0 auto;
+    width: 95%;
     font-style: italic;
     color: rgba(0,0,0,0.7);
 }
@@ -48,6 +52,7 @@ blockquote {
 
 @media screen and (min-width: 40em) { /* 640px */
     body {
+        width: 90%;
         max-width: 35em;
     }
 }
