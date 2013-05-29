@@ -4,7 +4,7 @@ body {
     background: #f5f5f5;
     color: #34495e;
     font-family: "ff-tisa-web-pro", serif;
-    font-size: 125%; /* 20px */
+    font-size: 100%; /* 16px */
 }
 
 p {
@@ -52,6 +52,7 @@ blockquote {
 
 @media screen and (min-width: 40em) { /* 640px */
     body {
+        font-size: 125%; /* 20px */
         width: 90%;
         max-width: 35em;
     }
