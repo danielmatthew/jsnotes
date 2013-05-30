@@ -1,6 +1,8 @@
 body {
     margin: 1em auto;
-    width: 90%;
+    width: 95%;
+    background: #f5f5f5;
+    color: #2c3e50;
     font-family: "ff-tisa-web-pro", serif;
     font-size: 100%; /* 16px */
 }
@@ -12,15 +14,22 @@ p {
 }
 
 h1 {
-    font-size: 2.25em; /* 36px */
-    line-height: 1.3333;
-    margin: 0 0 0.6667;
+    font-size: 2.6179em;
+    line-height: 1.1459;
+    margin: 0 0 0.573em;
 }
 
 h2 {
-    font-size: 1.875em; /* 30px */
-    line-height: 1.6;
-    margin: 0 0 0.8em;
+    font-size: 2.427em;
+    line-height: 1.2361;
+    margin: 0 0 0.618em;
+}
+
+h3 {
+    font-size: 1.618em;
+    line-height: 1.8541;
+    margin: 0 0 0.9271em;
+    font-style: italic;
 }
 
 a {
@@ -29,8 +38,10 @@ a {
 }
 
 blockquote {
+    margin: 0 auto;
+    width: 95%;
     font-style: italic;
-    color: rgba(0,0,0,0.7);
+    color: #34495e;
 }
 
 .post {
@@ -48,6 +59,8 @@ blockquote {
 
 @media screen and (min-width: 40em) { /* 640px */
     body {
-        max-width: 35em;
+        font-size: 125%; /* 20px */
+        width: 80%;
+        max-width: 30em;
     }
 }
